@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-
+    <link rel="stylesheet" type="text/css" href="../slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="../slick/slick-theme.css"/>
     <title>Page Produit</title>
 </head>
 <body>
@@ -48,38 +49,60 @@
         </header>
         
         <main class="main">
-            <section class="carousel">
-             
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="..." class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="..." class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="..." class="d-block w-100" alt="...">
-                      </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Next</span>
-                    </a>
-                  </div>
-                  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol>
-
-            </section>
-
+          <section class="product"> 
+            <div class="product-slider">
+              <div><img src="images/img-chaussure-1.jpg" alt=""></div>
+              <div><img src="" alt=""></div>
+              <div><img src="" alt=""></div>
+            </div>
+          </section>
+          <section class="product-infos">
+            <h2 class="infos-title">
+              Nike SB Dunk High Pro - Truck it
+            </h2>
+            <p class="infos-ref">
+              Référence : BQ6826-003
+            </p>
+            <div class="infos-price">
+              <p class="infos-price-base">80,00€</p>
+              <p class="infos-price-reduc">-10%</p>
+              <p class="infos-price-new">75,00€</p>
+            </div>
+            <div class="infos-size">
+              Taille
+              <ul class=>
+                <li class="infos-size-country-item">EU</li>
+                <li class="infos-size-country-item">US</li>
+                <li class="infos-size-country-item">UK</li>
+                <li class="infos-size-country-item">CM</li>
+              </ul>
+              <ol class="infos-size-list">
+                <li  class="infos-size-list-item">40</li>
+                <li  class="infos-size-list-item">41</li>
+                <li  class="infos-size-list-item">42</li>
+                <li  class="infos-size-list-item">42.5</li>
+                <li  class="infos-size-list-item">43</li>
+                <li  class="infos-size-list-item">44</li>
+              </ol>
+            </div>
+          </section>
+        <button type="button" class="btn btn-dark btn-lg">Ajouter au panier</button>
+        <p class="">Cette Nike SB Dunk High Pro Black/University Gold appartient à la collection</p>
+        <ul>
+          <li>Livraison gratuite en france métropolitaine</li>
+          <li>Expédition le jour même jusqu'à 13H</li>
+          <li>Paiement 100% sécurisé</li>
+        </ul>
+        <a>Voir tout les produits Nike</a>
         </main>
+        
+        <aside>
+          <h3>Vous aimerez aussi</h3>
+        </aside>
+        
+        <aside>
+          <h3>Derniers articles consultés</h3>
+        </aside>
         
         <footer class="footer">
 
@@ -88,5 +111,8 @@
     <script src="./js/app.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="../slick/slick.min.js"></script>
 </body>
 </html>
