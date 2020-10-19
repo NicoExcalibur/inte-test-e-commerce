@@ -1,17 +1,14 @@
-// Définition de la variable "fa-font-path" nécessaire au chargement des fichiers de font de FA
-// Comme elle est déclarée en premier, c'est cette valeur qui sera utilisée
-// et non celle définie dans le code source de FA
-$fa-font-path: '/../node_modules/font-awesome/fonts';
+@charset 'UTF-8';
 
-@import '~reset-css/sass/reset', '~font-awesome/scss/font-awesome';
+@import 
+'abstracts/vars';
 
-body {
-  background-color: black;
-}
+@import
+'~reset-css/sass/reset',
+'~font-awesome/scss/font-awesome';
 
-h1 {
-  font-size: 2em;
-  color: lime;
-  padding: 3em;
-  text-align: center;
-}
+@import
+'../node_modules/bootstrap/scss/bootstrap';
+
+@import
+  'base/typo';
