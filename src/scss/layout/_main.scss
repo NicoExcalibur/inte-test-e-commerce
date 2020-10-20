@@ -1,3 +1,33 @@
 .main {
     padding: $main-padding;
+    
+    .collection-text {
+        color: $alt-color;
+    }
+
+    .insurance-list {
+        font-size: 95%;
+    }
+
+    .collection-link {
+        color: black;
+        text-transform: uppercase;
+        font-weight: bold;
+        img {
+            margin-right: 1em;
+        }
+    }
+
+    .product-infos {
+        .infos-size {
+            p {
+                text-transform: uppercase;
+            }
+
+            &-list {
+                font-weight: bold;
+            }
+        }
+
+    }
 }

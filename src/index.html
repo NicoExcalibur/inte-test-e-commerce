@@ -10,7 +10,7 @@
     <div class="wrapper">
         <header class="header">
     
-            <nav class="navbar navbar-expand-lg navbar-light">
+            <nav class="navbar navbar-expand-lg navbar-light p-1">
               <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <img src="images/svg/interface-burger.svg"/>
                 <span class="navbar-toggler-icon">
@@ -48,8 +48,12 @@
                     <img src="images/svg/logo-header.svg" alt="Logo Fenom" height="30px"/>
                   </a>
                 </div>
-
-                <div class="basket">basket</div>
+                <div class="search">
+                  <img src="images/svg/interface-search.svg" alt="Logo recherche" height="50px"/>
+                </div>
+                <div class="cart">
+                  <img src="images/svg/interface-shopping-cart.svg" alt="cart logo" height="40px">
+                </div>
             </nav>
         </header>
         
@@ -78,13 +82,13 @@
               <small>Référence : BQ6826-003</small>
             </p>
             <div class="infos-price d-flex justify-content-start">
-              <p class="infos-price-base"><small><del>80,00€</del></small></p>
-              <p class="infos-price-reduc">-10%</del></p>
+              <p class="infos-price-base mr-2"><small><del>80,00€</del></small></p>
+              <p class="infos-price-reduc bg-dark text-white mr-2">-10%</del></p>
               <p class="infos-price-new">75,00€</p>
             </div>
             <div class="infos-size">
               <div class="infos-size-top d-flex justify-content-between row row-cols-2">
-                <p class="align-items-start col-6">Taille</p>
+                <p class="align-items-start col-6"><strong>Taille</strong></p>
                 <ul class="infos-size-country d-flex col-6">
                 <li class="infos-size-country-item p-2"><u>EU</u></li>
                 <li class="infos-size-country-item p-2">US</li>
@@ -103,41 +107,45 @@
             </div>
           </section>
           <div class="button-addcart d-flex justify-content-center">
-            <button type="button" class="btn btn-dark btn-lg rounded-0 p-2 col-12">Ajouter au panier</button>
+            <button type="button" class="btn btn-dark btn-lg rounded-0 p-3 col-12">Ajouter au panier</button>
           </div>
-        <p class="collection-text">Cette Nike SB Dunk High Pro Black/University Gold appartient à la collection</p>
-        <ul class="insurance-list">
-          <li><img src="images/svg/insurance-2.svg"/>Livraison gratuite en france métropolitaine</li>
-          <li><img src="images/svg/insurance-5.svg"/>Expédition le jour même jusqu'à 13H</li>
-          <li><img src="images/svg/insurance-1.svg"/>Paiement 100% sécurisé</li>
+        <p class="collection-text mt-4">Cette Nike SB Dunk High Pro Black/University Gold appartient à la collection</p>
+        <ul class="insurance-list mb-4">
+          <li><img src="images/svg/insurance-2.svg"/><strong>Livraison gratuite en france métropolitaine</strong></li>
+          <li><img src="images/svg/insurance-5.svg"/><strong>Expédition le jour même jusqu'à 13H</strong></li>
+          <li><img src="images/svg/insurance-1.svg"/><strong>Paiement 100% sécurisé</strong></li>
         </ul>
-        <a class="collection-link"><img src="images/svg/logo-nike.svg" height="35px"/>Voir tout les produits Nike</a>
+        <a class="collection-link mt-4"><img src="images/svg/logo-nike.svg" height="35px"/>Voir tout les produits Nike</a>
         </main>
         
-        <aside class="">
-          <h3 class="">Vous aimerez aussi</h3>
+        <aside class="aside like">
+          <h3 class=""><strong>Vous aimerez aussi</strong></h3>
         </aside>
         
-        <aside class="">
-          <h3 class="">Derniers articles consultés</h3>
+        <aside class="aside last">
+          <h3 class=""><strong>Derniers articles consultés</strong></h3>
         </aside>
 
-        <aside class="insurance row row-cols-2 row-cols-sm-2 row-cols-md-4">
+        <aside class="insurance p-4 row row-cols-2 row-cols-sm-2 row-cols-md-4">
           <div class="insurance-text col">
-            <h5>Livraison Gratuite</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sapiente ducimus dolorem delectus nobis numquam mollitia enim aspernatur tempora</p>
+            <img src="images/svg/insurance-1.svg" alt="" height="25%">
+            <h5>Livraison gratuite</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
-          <div class="feature-text col">
+          <div class="insurance-text col">
+            <img src="images/svg/insurance-1.svg" alt="" height="25%">
             <h5>Paiement sécurisé</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sapiente ducimus dolorem delectus nobis numquam mollitia enim aspernatur tempora</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
           <div class="insurance-text col">
+            <img src="images/svg/insurance-1.svg" alt="" height="25%">
             <h5>Service client</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sapiente ducimus dolorem delectus nobis numquam mollitia enim aspernatur tempora</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
           <div class="insurance-text col">
+            <img src="images/svg/insurance-1.svg" alt="" height="25%">
             <h5>Retour</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sapiente ducimus dolorem delectus nobis numquam mollitia enim aspernatur tempora</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
         </aside>
         
@@ -205,13 +213,13 @@
               </div>
             </div>
           </div>
-          <div class="contact">
-            <p>Suivez-nous pour ne rien manquer !</p>
-            <p>Recevez toutes les infos sur les prochaines sorties, offres et actualités de la boutique Fenom</p>
+          <div class="contact mt-4">
+            <p class="contact-head">Suivez-nous pour ne rien manquer !</p>
+            <p class="contact-text">Recevez toutes les infos sur les prochaines sorties, offres et actualités de la boutique Fenom</p>
             <div class="input-group mb-3">
               <input type="text" class="form-control rounded-0" placeholder="Inscrivez votre email" aria-label="Recipient's mail" aria-describedby="basic-addon2">
               <div class="input-group-append rounded-0">
-                <span class="input-group-text rounded-0" id="basic-addon2">S'inscrire</span>
+                <span class="input-group-text rounded-0 bg-dark text-white" id="basic-addon2">S'inscrire</span>
               </div>
             </div>
             <div class="network d-flex justify-content-center m-5">

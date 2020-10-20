@@ -1,3 +1,13 @@
-aside {
-    padding: 1em;
+.aside {
+    padding: $main-padding;
+    h3 {
+        text-transform: uppercase;
+    }
+}
+
+.insurance {
+    h5 {
+        font-size: 95%;
+        font-weight: bold;
+    }
 }
