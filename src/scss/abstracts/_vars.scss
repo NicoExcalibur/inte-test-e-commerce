@@ -4,7 +4,14 @@
 $fa-font-path: '/../node_modules/font-awesome/fonts';
 
 // FONTS
-
 $main-font: 'Roboto', sans-serif;
 $main-font-condensed: 'Roboto Condensed', sans-serif;
 $font-fallback: Arial, Helvetica, sans-serif;
+
+// LAYOUT
+$main-padding: 1em;
+
+//BREAKPOINT
+$breakpoint-medium: 500px;
+$breakpoint-large: 800px;
+$breakpoint-extra-large: 1200px;
