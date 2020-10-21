@@ -103,6 +103,7 @@
     display: none;
 }
 
+// Main slider's dots
 .slick-dots {
     display: flex !important;
     justify-content: flex-end;
@@ -110,11 +111,11 @@
         margin-top: 0.5em;
         button {
             background-color: $alt-color;
-            overflow:hidden;
+            text-indent: -9999px;
             border: none;
             margin: 0.1em;
             width: 1.2em !important;
-            height: 0.5em;
+            height: 0.3em;
         }
     }
     .slick-active {
@@ -124,32 +125,31 @@
     }   
 }
 
+// aside sliders arrows
 .aside-slider {
     position: relative;
     .slider-item {
-        margin-top: 2.5em;
+        margin-bottom: 1em;
     }
     
-    .prev-arrow {
+    .slick-prev {
         position: absolute;
         width: 30px;
         height: 30px;
         background-color: blue;
         display: inline-block;
-        text-align: right;
         cursor: pointer;
         right: 3em;
+        bottom: -2em;
     }
     
-    .next-arrow {
+    .slick-next {
         position: absolute;
         width: 30px;
         height: 30px;
         background-color: blue;
         display: inline-block;
-        text-align: right;
         cursor: pointer;
         right: 0;
-        top: 0;
     }
 }

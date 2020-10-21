@@ -36,10 +36,9 @@ $(function() {
 
 
   $('.aside-slider').slick({
-    infinite: true,
     arrows: true,
-    prevArrow: '<div class="prev-arrow"></div>',
-    nextArrow: '<div class="next-arrow"></div>',
+    prevArrow: '<div class="slick-prev"></div>',
+    nextArrow: '<div class="slick-next"></div>',
   });
 
 });
