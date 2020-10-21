@@ -1,12 +1,9 @@
 import '../scss/main.scss';
 
 $(function() {
-  $('.slider').slick({
+  $('.main-slider').slick({
     dots: true,
-    infinite: false,
-    speed: 300,
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    arrows: false,
     responsive: [
       {
         breakpoint: 1024,
@@ -36,4 +33,14 @@ $(function() {
       // instead of a settings object
     ]
   });
+
+
+  $('.aside-slider').slick({
+    infinite: true,
+    arrows: true,
+    prevArrow: '<div class="prev-arrow"></div>',
+    nextArrow: '<div class="next-arrow"></div>',
+  });
+
 });
+	
