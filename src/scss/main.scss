@@ -9,6 +9,7 @@
   '~bootstrap/scss/bootstrap';
 
 @import
+  'components/slick',
   'components/insurance',
   'components/button',
   'components/network',
@@ -18,7 +19,6 @@
   'base/typo';
 
   @import
-  'layout/slideshow',
   'layout/main',
   'layout/footer',
   'layout/aside';
