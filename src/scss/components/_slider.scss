@@ -64,9 +64,10 @@
     }
 }
 .slick-slide {
+    margin: auto;
     display: flex;
     float: left;
-    height: 50%;
+    height: 223px;
     min-height: 1px;
     [dir="rtl"] & {
         float: right;
@@ -74,6 +75,7 @@
     img {
         display: block;
         width: 100%;
+        max-width:300px;
     }
     &.slick-loading img {
         display: none;
@@ -128,10 +130,14 @@
 // aside sliders arrows
 .aside-slider {
     position: relative;
-    .slider-item {
-        margin-bottom: 1em;
+    .slick-slide{
+
+        img {
+            display: block;
+            width: 70%;
+            max-width:300px;
+        }
     }
-    
     .slick-prev {
         position: absolute;
         width: 30px;

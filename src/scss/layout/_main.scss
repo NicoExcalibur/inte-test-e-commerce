@@ -1,14 +1,18 @@
 .main {
     padding: $main-padding;
     
+    .infos-ref {
+        color: $grey-text;
+    }
+
     .collection-text {
-        color: $alt-color;
+        color: $grey-text;
     }
 
     .insurance-list {
         font-size: 95%;
     }
-
+    
     .collection-link {
         color: black;
         text-transform: uppercase;

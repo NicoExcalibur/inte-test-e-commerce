@@ -1,4 +1,10 @@
 .insurance {
+  &-text {
+    p {
+      color: $grey-text;
+    }
+  }
+  
   &-list {
     li{
       img {

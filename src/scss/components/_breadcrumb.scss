@@ -1,0 +1,13 @@
+.breadcrumb {
+    background-color: white;
+    font-size: small;
+    &-item {
+        a {
+            color: $grey-text;
+            text-decoration: none;
+            .active {
+                color: black;
+            }
+        }
+    }
+}

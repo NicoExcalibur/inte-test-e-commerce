@@ -1,18 +1,21 @@
 import '../scss/main.scss';
 
 $(function() {
+  var viewportWidth = jQuery(window).width();
+
+  if (viewportWidth > 1024) {
+    $('.main-slider').slick('unslick');
+  } else 
   $('.main-slider').slick({
     dots: true,
     arrows: false,
+    mobileFirst: true,
+    accessibility: true,
+    variableWidth: true,
     responsive: [
       {
         breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true
-        }
+        settings: "unslick"
       },
       {
         breakpoint: 600,
@@ -34,8 +37,8 @@ $(function() {
     ]
   });
 
-
   $('.aside-slider').slick({
+    centerMode: true,
     arrows: true,
     prevArrow: '<div class="slick-prev"></div>',
     nextArrow: '<div class="slick-next"></div>',
