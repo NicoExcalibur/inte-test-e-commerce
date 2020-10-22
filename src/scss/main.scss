@@ -9,6 +9,9 @@
   '~bootstrap/scss/bootstrap';
 
 @import
+  'base/typo';
+
+@import
   'components/slider',
   'components/breadcrumb',
   'components/insurance',
@@ -17,9 +20,7 @@
   'components/accordion';
 
 @import
-  'base/typo';
-
-  @import
+  'layout/body',
   'layout/header',
   'layout/main',
   'layout/footer',
