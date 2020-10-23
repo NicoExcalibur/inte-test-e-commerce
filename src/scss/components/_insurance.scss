@@ -1,12 +1,15 @@
 .insurance {
   &-text {
+    max-width: 250px;
     p {
       color: $grey-text;
+      line-height: 1.2em;
     }
   }
   
   &-list {
     li{
+      font-weight: bolder;
       img {
         height:30px;   
       }

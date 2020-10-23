@@ -1,6 +1,6 @@
 .main {
     padding: $main-padding;
-    
+
     .infos-ref {
         color: $grey-text;
     }
@@ -23,9 +23,31 @@
     }
 
     .product-infos {
+        
+        .infos-title {
+            font-family: $main-font-condensed;
+        }
+
+        .infos-price {
+            &-base {
+                padding: .2em 0em;
+                font-size: smaller;
+            }
+            
+            &-reduc {
+                padding: .5em .5em;
+                background-color: black !important;
+            }
+            
+            &-new {
+                font-size: 1.5em;
+                font-weight: bolder;
+            }
+        }
+
         .infos-size {
             p {
-                text-transform: uppercase;
+                color: $grey-text;
             }
 
             &-list {

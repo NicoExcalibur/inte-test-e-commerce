@@ -1,6 +1,7 @@
 import '../scss/main.scss';
 
 $(function() {
+  //function to activate/deactivate slider
   var viewportWidth = jQuery(window).width();
 
   if (viewportWidth > 1024) {
@@ -31,18 +32,15 @@ $(function() {
           slidesToScroll: 1
         }
       }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
     ]
   });
-
+  
   $('.aside-slider').slick({
     centerMode: true,
     arrows: true,
+    //param to customize arrows
     prevArrow: '<div class="slick-prev"></div>',
     nextArrow: '<div class="slick-next"></div>',
   });
 
 });
-	

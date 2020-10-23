@@ -17,13 +17,27 @@
           <nav class="navbar navbar-expand-lg navbar-light p-1 nav-fill flex-lg-justify-between">
             <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <img src="images/svg/interface-burger.svg"/>
-              <span class="navbar-toggler-icon color-white">
+                <span class="navbar-toggler-icon color-white">
               </span>
               </button>
               <div class="collapse navbar-collapse order-md-0 order-lg-1" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto">
-                      <li class="nav-item active">
-                          <a class="nav-link text-uppercase" href="#">Nouveautés <span class="sr-only">(current)</span></a>
+                  <ul class="navbar-nav mr-auto mx-auto">
+                      <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle text-uppercase" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Nouveautés</a>
+                        <div class="dropdown-menu">
+                          <div class="d-flex">
+                            <a class="dropdown-item dropright" href="#">Action</a>
+                            <img src="images/svg/nav-arrow-right.svg" height="20px" alt="">
+                          </div>
+                          <div class="d-flex">
+                            <a class="dropdown-item dropright" href="#">Action</a>
+                            <img src="images/svg/nav-arrow-right.svg" height="20px" alt="">
+                          </div>
+                          <div class="d-flex">
+                            <a class="dropdown-item dropright" href="#">Action</a>
+                            <img src="images/svg/nav-arrow-right.svg" height="20px" alt="">
+                          </div>
+                        </div>
                       </li>
                       <li class="nav-item">
                           <a class="nav-link text-uppercase" href="#">Homme</a>
@@ -45,17 +59,34 @@
                       </li>
                   </ul>
               </div>
-              <div class="header-logo order-sm-1 order-md-1 order-lg-0">
+              <div class="header-logo order-sm-1 order-md-1 order-lg-0 ml-lg-4">
                 <a href="#">
                   <img src="images/svg/logo-header.svg" alt="Logo Fenom" height="30px"/>
                 </a>
               </div>
               <div class="nav-right d-flex order-sm-2 order-lg-2">
-                <div class="search">
-                <img src="images/svg/interface-search.svg" alt="Logo recherche" height="50px"/>
+                <!-- Button trigger modal -->
+                <button class="search border-0" data-toggle="modal" data-target="#searchModal">
+                  <img src="images/svg/interface-search.svg" alt="Logo recherche" height="50px"/>
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content rounded-0">
+                      <div class="modal-body">
+                        <div class="input-group">
+                          <img src="images/svg/interface-search.svg" alt="Logo recherche" height="40px"/>
+                          <input type="text" class="form-control border-0" placeholder="RECHERCHER UN MODELE" aria-label="Rechercher un modèle" aria-describedby="basic-addon2">
+                          <div class="input-group-append">
+                            <button class="btn btn-outline-secondary border-0" type="button"  data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="cart">
-                <img src="images/svg/interface-shopping-cart.svg" alt="cart logo" height="40px">
+                  <img src="images/svg/interface-shopping-cart.svg" alt="cart logo" height="40px">
               </div>
             </div>
           </nav>
@@ -161,7 +192,7 @@
           </div>
         </aside>
 
-        <aside class="insurance row row-cols-2 row-cols-sm-2 row-cols-md-4 mx-auto pt-4">
+        <aside class="insurance d-flex justify-content-center row row-cols-2 row-cols-sm-2 row-cols-md-4 mx-auto pt-4">
           <div class="insurance-text col text-center">
             <img src="images/svg/insurance-2.svg" alt="" height="25%">
             <h5>Livraison gratuite</h5>
@@ -185,15 +216,15 @@
         </aside>
         
         <footer class="footer d-flex flex-column">
-          <div class="footer-first d-flex flex-lg-row flex-xl-row ">
-            <div class="accordion col-lg-6 col-xl-6" id="accordionExample">
+          <div class="footer-first d-flex flex-column flex-lg-row flex-xl-row ">
+            <div class="accordion col-lg-6 col-xl-6 d-lg-none d-xl-none" id="accordionExample">
               <div class="card border-right-0 border-left-0">
                 <div class="card-header" id="headingOne">
                   <h2 class="mb-0">
                     <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                     Shop
                     </button>
-              </h2>
+                  </h2>
                 </div>
               <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                 <div class="card-body">
@@ -247,8 +278,40 @@
                   </div>
                 </div>
               </div>
+            </div>
+            <div class="footer-list col-lg-6 col-xl-6 d-none d-lg-flex d-xl-flex  justify-content-around">
+              <div class="footer-list-one">
+                <ol class="list-group">
+                  <li class="list-group-item border-0"><span class="footer-list-title">Shop</span></li>
+                  <li class="list-group-item border-0"><a href="#">Homme</a></li>
+                  <li class="list-group-item border-0"><a href="#">Femme</a></li>
+                  <li class="list-group-item border-0"><a href="#">Lifestore</a></li>
+                  <li class="list-group-item border-0"><a href="#">Marques</a></li>
+                </ol>
               </div>
-            <div class="footer-contact  col-lg-6 col-xl-6">
+              <div class="footer-list-one">
+                <ol class="list-group">
+                  <li class="list-group-item border-0"><span class="footer-list-title">SAV</span></li>
+                  <li class="list-group-item border-0"><a href="#">Livraison</a></li>
+                  <li class="list-group-item border-0"><a href="#">Retour</a></li>
+                  <li class="list-group-item border-0"><a href="#">Paiement</a></li>
+                  <li class="list-group-item border-0"><a href="#">FAQ</a></li>
+                  <li class="list-group-item border-0"><a href="#">CGV</a></li>
+                  <li class="list-group-item border-0"><a href="#">Infos persos</a></li>
+                  <li class="list-group-item border-0"><a href="#">Mentions</a></li>
+                </ol>
+              </div>
+              <div class="footer-list-one">
+                <ol class="list-group">
+                  <li class="list-group-item border-0"><span class="footer-list-title">&Agrave; propos</span></li>
+                  <li class="list-group-item border-0"><a href="#">features</a></li>
+                  <li class="list-group-item border-0"><a href="#">Qui-sommes nous</a></li>
+                  <li class="list-group-item border-0"><a href="#">Travailler avec Fenom</a></li>
+                  <li class="list-group-item border-0"><a href="#">Contact</a></li>
+                </ol>
+              </div>
+            </div>
+            <div class="footer-contact col-lg-6 col-xl-6">
               <div class="contact mt-4">
                 <p class="contact-head">Suivez-nous pour ne rien manquer !</p>
                 <p class="contact-text">Recevez toutes les infos sur les prochaines sorties, offres et actualités de la boutique Fenom</p>
@@ -258,7 +321,7 @@
                 <span class="input-group-text rounded-0 bg-dark text-white" id="basic-addon2">S'inscrire</span>
               </div>
             </div>
-            <div class="network d-flex justify-content-center m-5">
+            <div class="network d-flex justify-content-center m-4">
             <div class="network-logos">
               <a href="#">
                 <img src="images/svg/network-facebook.svg"/>

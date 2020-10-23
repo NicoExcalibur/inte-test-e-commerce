@@ -1,7 +1,8 @@
 .footer {
   padding: $main-padding;
   background-color: $main-background;
-    &-logo {
+    
+  &-logo {
         img {
 
             height:5em;
@@ -11,10 +12,43 @@
         &-head {
             font-weight: bold;
             font-size: x-large;
+            line-height: .9em;
         }
 
         &-text {
-            color: $alt-color;
+            color: $grey-text;
+        }
+
+        span {
+            background-color: black !important;
+        }
+    }
+
+    &-list {
+        padding-top: 1.3em;
+        .list-group {
+            font-family: $main-font-condensed !important;
+            
+            &-item {
+                background-color: $main-background;
+                padding: .1em;
+            }
+            
+            span {
+                font-weight: bolder;
+                font-size: larger;
+            }
+            
+            a {
+                text-decoration: none;
+                color: black;
+                font-family: $main-font;
+                font-size: small;
+
+                &::hover {
+                    text-decoration: underline;
+                }
+            }
         }
     }
 }

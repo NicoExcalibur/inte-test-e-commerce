@@ -2,5 +2,21 @@
     .btn {
         color: black;
         font-weight: bold;
+        text-transform: uppercase;
+        position: relative;
+        //add arrow
+        &::after {
+            content: "\f107";
+            color: #333;
+            top: -2px;
+            right: 0px;
+            position: absolute;
+            font-family: "FontAwesome"
+
+        }
+    }
+    
+    .btn[aria-expanded="true"]::after {
+        content: "\f106";
     }
 }

@@ -1,0 +1,38 @@
+.navbar {
+    .collapse {
+        ul {
+            a {
+                font-weight: bolder;
+            }
+        }
+    }
+
+    .dropdown {
+        &-menu {
+            a {
+                text-transform: uppercase;
+                &:hover {
+                    background-color: black;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .dropdown-toggle::after {
+        content: none;
+    }
+
+    .dropdown > .dropdown-toggle:active {
+        /*Without this, clicking will make it sticky*/
+        pointer-events: none;
+    }
+
+    .dropdown:hover>.dropdown-menu {
+        display: block;
+    }
+
+    button {
+        background-color: white !important;
+    }
+}
