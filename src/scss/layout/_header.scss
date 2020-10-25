@@ -4,7 +4,7 @@
         background-color: $main-background;
         padding: .7em;
         p {
-            color: $grey-text;
+            color: $light-grey-text;
             font-size: small;
             margin: 0;
         }
@@ -14,7 +14,7 @@
 
         &-item {
             font-weight: bold;
-            color: $main-background;
+            color: $light-grey-text;
 
             &:hover {
                 cursor: pointer;

@@ -60,7 +60,7 @@
                       </li>
                       <li class="nav-item">
                         <!-- Button trigger modal -->
-                        <button class="search border-0" data-toggle="modal" data-target="#searchModalLarge">
+                        <button class="search border-0 d-none d-lg-block d-xl-block" data-toggle="modal" data-target="#searchModalLarge">
                           <img src="images/svg/interface-search.svg" alt="Logo recherche" height="35px"/>
                         </button>
                         <!-- Modal -->
@@ -108,8 +108,12 @@
                     </div>
                   </div>
                 </div>
-                <div class="cart">
-                  <img src="images/svg/interface-shopping-cart.svg" alt="cart logo" height="40px">
+                <div>
+                  <div class="cart d-flex align-items-center">
+                    <a class="user-link d-none d-lg-block d-xl-block"><img src="images/svg/interface-user.svg" alt="cart logo" height="40px"></a>
+                    <img src="images/svg/interface-shopping-cart.svg" alt="cart logo" height="40px">
+                    <p class="text-uppercase d-none d-lg-block d-xl-block m-0">Panier</p>
+                  </div>
               </div>
             </div>
           </nav>
@@ -170,28 +174,28 @@
             <section class="product-infos d-lg-flex flex-lg-column flex-xl-column col-lg-4 col-xl-4">
               <h2 class="infos-title font-weight-bold">Nike SB Dunk High Pro - Truck it</h2>
               <p class="infos-ref">Référence : BQ6826-003</p>
-              <div class="infos-price d-flex justify-content-start">
+              <div class="infos-price d-flex justify-content-start align-items-baseline">
                 <p class="infos-price-base mr-2"><del>80,00€</del></p>
                 <p class="infos-price-reduc bg-dark text-white mr-2">-10%</p>
                 <p class="infos-price-new">75,00€</p>
               </div>
             <div class="infos-size">
-              <div class="infos-size-top d-flex justify-content-between align-content-start row row-cols-2">
+              <div class="infos-size-top d-flex justify-content-between align-content-start row row-cols-2  align-items-baseline">
                 <p class="align-items-start col-6 font-weight-bold text-uppercase">Taille</p>
                 <ul class="infos-size-country d-flex col-6">
-                  <li class="infos-size-country-item p-2"><u>EU</u></li>
+                  <li class="infos-size-country-item p-2 active">EU</li>
                   <li class="infos-size-country-item p-2">US</li>
                   <li class="infos-size-country-item p-2">UK</li>
                   <li class="infos-size-country-item p-2">CM</li>
                 </ul>
             </div>
               <ol class="infos-size-list d-flex justify-content-around col-12">
-                <li  class="infos-size-list-item p-2 border">40</li>
-                <li  class="infos-size-list-item p-2">41</li>
-                <li  class="infos-size-list-item p-2">42</li>
-                <li  class="infos-size-list-item p-2">42.5</li>
-                <li  class="infos-size-list-item p-2">43</li>
-                <li  class="infos-size-list-item p-2">44</li>
+                <li  class="infos-size-list-item bordered">40</li>
+                <li  class="infos-size-list-item">41</li>
+                <li  class="infos-size-list-item">42</li>
+                <li  class="infos-size-list-item">42.5</li>
+                <li  class="infos-size-list-item">43</li>
+                <li  class="infos-size-list-item">44</li>
               </ol>
               <div class="button-addcart d-flex justify-content-center flex-lg-column flex-xl-column">
                 <button type="button" class="btn btn-lg rounded-0 p-3 col-12">Ajouter au panier</button>
@@ -375,7 +379,7 @@
                 <span class="input-group-text rounded-0 bg-dark text-white" id="basic-addon2">S'inscrire</span>
               </div>
             </div>
-            <div class="network d-flex justify-content-center m-4">
+            <div class="network d-flex justify-content-center justify-content-lg-end justify-content-xl-end m-4">
             <div class="network-logos">
               <a href="#">
                 <img src="images/svg/network-facebook.svg"/>

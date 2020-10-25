@@ -39,3 +39,29 @@ $(function() {
 $('.list-inline-item').click(function() {
   $('.list-inline').children(".list-inline-item").toggleClass(" active");
 });
+
+
+//change state by clicking on size's country select
+$('.infos-size-country-item').click(function() {
+  $('.infos-size-country-item').removeClass('active');
+
+  if($(this).hasClass('infos-size-country-item'))
+  {
+    $(this).addClass('active');
+  }else{
+    $(this).closest('infos-size-country-item').addClass('active');
+  }
+});
+
+//change state by clicking on size item
+$('.infos-size-list-item').click(function() {
+  $('.infos-size-list-item').removeClass('bordered');
+
+  if($(this).hasClass('infos-size-list-item'))
+  {
+    $(this).addClass('bordered');
+  }else{
+    $(this).closest('infos-size-list-item').addClass('bordered');
+  }
+});
+

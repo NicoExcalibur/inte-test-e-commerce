@@ -2,7 +2,7 @@
     padding: $main-padding;
 
     .infos-ref {
-        color: $grey-text;
+        color: $light-grey-text;
     }
 
     .collection-text {
@@ -31,7 +31,8 @@
         .infos-price {
             &-base {
                 padding: .2em 0em;
-                font-size: smaller;
+
+                font-weight: bolder;
             }
             
             &-reduc {
@@ -52,6 +53,25 @@
 
             &-list {
                 font-weight: bold;
+
+                &-item {
+                    padding: .6em 1em;
+                }
+            }
+
+            &-country {
+                color: $light-grey-text;
+                font-size: smaller;
+                font-weight: bolder;
+            }
+
+            .active {
+                color: $black;
+                text-decoration: underline;
+            }
+
+            .bordered {
+                border: $black 2px solid;
             }
         }
 
