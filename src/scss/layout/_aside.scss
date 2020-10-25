@@ -2,6 +2,9 @@
     padding: $main-padding;
     h3 {
         text-transform: uppercase;
+        font-family: $aside-title;
+        font-weight: 900;
+        font-stretch: condensed;
     }
 }
 

@@ -1,12 +1,7 @@
 import '../scss/main.scss';
 
 $(function() {
-  //function to activate/deactivate slider
-  var viewportWidth = jQuery(window).width();
 
-  if (viewportWidth > 1024) {
-    $('.main-slider').slick('unslick');
-  } else 
   $('.main-slider').slick({
     dots: true,
     arrows: false,
@@ -14,10 +9,6 @@ $(function() {
     accessibility: true,
     variableWidth: true,
     responsive: [
-      {
-        breakpoint: 1024,
-        settings: "unslick"
-      },
       {
         breakpoint: 600,
         settings: {
@@ -36,11 +27,15 @@ $(function() {
   });
   
   $('.aside-slider').slick({
-    centerMode: true,
     arrows: true,
     //param to customize arrows
     prevArrow: '<div class="slick-prev"></div>',
     nextArrow: '<div class="slick-next"></div>',
   });
 
+});
+
+//change state by clicking on language select
+$('.list-inline-item').click(function() {
+  $('.list-inline').children(".list-inline-item").toggleClass(" active");
 });

@@ -14,11 +14,15 @@
           <div class="info-block d-none d-lg-block d-xl-block">
             <p class="info-block-text text-center">livrason gratuite en France sur toutes vos commandes</p>
           </div>
+          <div class="language-select d-none d-lg-block d-xl-block p-1 text-right">
+            <ol class="list-inline">
+              <li class="list-inline-item">EN</li>
+              <li class="list-inline-item  active">FR</li>
+            </ol>
+          </div>
           <nav class="navbar navbar-expand-lg navbar-light p-1 nav-fill flex-lg-justify-between">
             <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <img src="images/svg/interface-burger.svg"/>
-                <span class="navbar-toggler-icon color-white">
-              </span>
+              <img class="navbar-toggler border-0" src="images/svg/interface-burger.svg" height="50px"/>
               </button>
               <div class="collapse navbar-collapse order-md-0 order-lg-1" id="navbarSupportedContent">
                   <ul class="navbar-nav mr-auto mx-auto">
@@ -27,15 +31,12 @@
                         <div class="dropdown-menu">
                           <div class="d-flex">
                             <a class="dropdown-item dropright" href="#">Action</a>
-                            <img src="images/svg/nav-arrow-right.svg" height="20px" alt="">
                           </div>
                           <div class="d-flex">
                             <a class="dropdown-item dropright" href="#">Action</a>
-                            <img src="images/svg/nav-arrow-right.svg" height="20px" alt="">
                           </div>
                           <div class="d-flex">
                             <a class="dropdown-item dropright" href="#">Action</a>
-                            <img src="images/svg/nav-arrow-right.svg" height="20px" alt="">
                           </div>
                         </div>
                       </li>
@@ -57,6 +58,28 @@
                       <li class="nav-item">
                           <a class="nav-link text-uppercase" href="#">Outlet</a>
                       </li>
+                      <li class="nav-item">
+                        <!-- Button trigger modal -->
+                        <button class="search border-0" data-toggle="modal" data-target="#searchModalLarge">
+                          <img src="images/svg/interface-search.svg" alt="Logo recherche" height="35px"/>
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="searchModalLarge" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content rounded-0">
+                              <div class="modal-body">
+                                <div class="input-group">
+                                  <img src="images/svg/interface-search.svg" alt="Logo recherche" height="40px"/>
+                                  <input type="text" class="form-control border-0" placeholder="RECHERCHER UN MODELE" aria-label="Rechercher un modèle" aria-describedby="basic-addon2">
+                                  <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary border-0" type="button"  data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </li>
                   </ul>
               </div>
               <div class="header-logo order-sm-1 order-md-1 order-lg-0 ml-lg-4">
@@ -66,7 +89,7 @@
               </div>
               <div class="nav-right d-flex order-sm-2 order-lg-2">
                 <!-- Button trigger modal -->
-                <button class="search border-0" data-toggle="modal" data-target="#searchModal">
+                <button class="search border-0 d-lg-none d-xl-none" data-toggle="modal" data-target="#searchModal">
                   <img src="images/svg/interface-search.svg" alt="Logo recherche" height="50px"/>
                 </button>
                 <!-- Modal -->
@@ -103,9 +126,12 @@
           </nav>
           <div class="d-lg-flex flex-lg-row flex-xl-row">
             <section class="product">
-              <div class="main-slider d-lg-flex flex-lg-row flex-xl-row col-lg-4 col-xl-4 flex-lg-wrap flex-xl-wrap">
+              <div class="main-slider d-lg-none d-xl-none">
                 <div class="slider_item">
                   <img src="images/img-chaussure-1.jpg" alt="">
+                </div>
+                <div class="slider_item">
+                  <img src="images/img-chaussure-2.jpg" alt="">
                 </div>
                 <div class="slider_item">
                   <img src="images/img-chaussure-3.jpg" alt="">
@@ -120,6 +146,26 @@
                   <img src="images/img-chaussure-6.jpg" alt="">
                 </div>
               </div>
+              <div class="mosaic d-none d-lg-flex d-xl-flex flex-wrap flex-row">
+                <div class="col-6">
+                  <img class="img-fluid" src="images/img-chaussure-1.jpg" alt="">
+                </div>
+                <div class="col-6">
+                  <img class="img-fluid" src="images/img-chaussure-2.jpg" alt="">
+                </div>
+                <div class="col-6">
+                  <img class="img-fluid" src="images/img-chaussure-3.jpg" alt="">
+                </div>
+                <div class="col-6">
+                  <img class="img-fluid" src="images/img-chaussure-4.jpg" alt="">
+                </div>
+                <div class="col-6">
+                  <img class="img-fluid" src="images/img-chaussure-5.jpg" alt="">
+                </div>
+                <div class="col-6">
+                  <img class="img-fluid" src="images/img-chaussure-6.jpg" alt="">
+                </div>
+              </div>
             </section>
             <section class="product-infos d-lg-flex flex-lg-column flex-xl-column col-lg-4 col-xl-4">
               <h2 class="infos-title font-weight-bold">Nike SB Dunk High Pro - Truck it</h2>
@@ -130,14 +176,14 @@
                 <p class="infos-price-new">75,00€</p>
               </div>
             <div class="infos-size">
-              <div class="infos-size-top d-flex justify-content-between row row-cols-2">
-              <p class="align-items-start col-6 font-weight-bold text-uppercase">Taille</p>
-              <ul class="infos-size-country d-flex col-6">
-                <li class="infos-size-country-item p-2"><u>EU</u></li>
-                <li class="infos-size-country-item p-2">US</li>
-                <li class="infos-size-country-item p-2">UK</li>
-                <li class="infos-size-country-item p-2">CM</li>
-              </ul>
+              <div class="infos-size-top d-flex justify-content-between align-content-start row row-cols-2">
+                <p class="align-items-start col-6 font-weight-bold text-uppercase">Taille</p>
+                <ul class="infos-size-country d-flex col-6">
+                  <li class="infos-size-country-item p-2"><u>EU</u></li>
+                  <li class="infos-size-country-item p-2">US</li>
+                  <li class="infos-size-country-item p-2">UK</li>
+                  <li class="infos-size-country-item p-2">CM</li>
+                </ul>
             </div>
               <ol class="infos-size-list d-flex justify-content-around col-12">
                 <li  class="infos-size-list-item p-2 border">40</li>
@@ -163,33 +209,41 @@
         </main>
         
         <aside class="aside like">
-          <h3 class=""><strong>Vous aimerez aussi</strong></h3>
+          <h3 class="">Vous aimerez aussi</h3>
           <div class="aside-slider">
             <div class="slider-item">
-              <img src="images/img-chaussure-1.jpg" alt="">
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="images/img-chaussure-1.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
             </div>
             <div class="slider-item">
-              <img src="images/img-chaussure-1.jpg" alt="">
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="images/img-chaussure-1.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
             </div>
             <div class="slider-item">
-              <img src="images/img-chaussure-1.jpg" alt="">
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="images/img-chaussure-1.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
             </div>
           </div>
         </aside>
         
         <aside class="aside last">
-          <h3 class=""><strong>Derniers articles consultés</strong></h3>
-          <div class="aside-slider">
-            <div class="slider-item">
-              <img src="images/img-chaussure-1.jpg" alt="">
-            </div>
-            <div class="slider-item">
-              <img src="images/img-chaussure-1.jpg" alt="">
-            </div>
-            <div class="slider-item">
-              <img src="images/img-chaussure-1.jpg" alt="">
-            </div>
-          </div>
+          <h3 class="">Derniers articles consultés</h3>
+          <!--TODO-->
         </aside>
 
         <aside class="insurance d-flex justify-content-center row row-cols-2 row-cols-sm-2 row-cols-md-4 mx-auto pt-4">

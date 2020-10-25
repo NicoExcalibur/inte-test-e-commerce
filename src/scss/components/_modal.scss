@@ -1,6 +1,19 @@
 .modal-dialog {
     top: 7%;
+    
     input {
-        color: black;
+        color: $black;
+    }
+}
+
+#searchModalLarge {
+    
+    .modal-dialog {
+        top: 7%;
+        max-width: 65%;
+        
+        input {
+            color: $black;
+        }
     }
 }

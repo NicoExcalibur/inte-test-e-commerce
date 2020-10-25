@@ -1,8 +1,9 @@
 .navbar {
     .collapse {
         ul {
-            a {
+            .nav-link {
                 font-weight: bolder;
+                color: $black;
             }
         }
     }
@@ -12,8 +13,16 @@
             a {
                 text-transform: uppercase;
                 &:hover {
-                    background-color: black;
+                    background-color: $black;
                     color: white;
+                }
+
+                &::after {
+                    content: "\f054";
+                    right: 0px;
+                    position: absolute;
+                    font-family: "FontAwesome";
+
                 }
             }
         }
@@ -21,11 +30,6 @@
 
     .dropdown-toggle::after {
         content: none;
-    }
-
-    .dropdown > .dropdown-toggle:active {
-        /*Without this, clicking will make it sticky*/
-        pointer-events: none;
     }
 
     .dropdown:hover>.dropdown-menu {

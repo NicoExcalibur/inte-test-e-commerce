@@ -14,7 +14,7 @@
     }
     
     .collection-link {
-        color: black;
+        color: $black;
         text-transform: uppercase;
         font-weight: bold;
         img {
@@ -36,7 +36,7 @@
             
             &-reduc {
                 padding: .5em .5em;
-                background-color: black !important;
+                background-color: $black !important;
             }
             
             &-new {
@@ -47,7 +47,7 @@
 
         .infos-size {
             p {
-                color: $grey-text;
+                color: $black;
             }
 
             &-list {

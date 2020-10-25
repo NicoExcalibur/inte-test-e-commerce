@@ -1,13 +1,13 @@
 .accordion {
     .btn {
-        color: black;
+        color: $black;
         font-weight: bold;
         text-transform: uppercase;
         position: relative;
         //add arrow
         &::after {
             content: "\f107";
-            color: #333;
+            color: $black;
             top: -2px;
             right: 0px;
             position: absolute;

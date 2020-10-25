@@ -1,9 +1,29 @@
-.info-block {
-    background-color: $main-background;
-    padding: .7em;
-    p {
-        color: $grey-text;
-        font-size: small;
-        margin: 0;
+.header {
+    
+    .info-block {
+        background-color: $main-background;
+        padding: .7em;
+        p {
+            color: $grey-text;
+            font-size: small;
+            margin: 0;
+        }
+    }
+    
+    .list-inline {
+
+        &-item {
+            font-weight: bold;
+            color: $main-background;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        
+        .active {
+            color: $black;
+        }
+
     }
 }
