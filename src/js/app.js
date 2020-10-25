@@ -8,6 +8,7 @@ $(function() {
     mobileFirst: true,
     accessibility: true,
     variableWidth: true,
+
     responsive: [
       {
         breakpoint: 600,
@@ -29,8 +30,41 @@ $(function() {
   $('.aside-slider').slick({
     arrows: true,
     //param to customize arrows
-    prevArrow: '<div class="slick-prev"></div>',
-    nextArrow: '<div class="slick-next"></div>',
+    prevArrow: '<div class="slick-prev"><img src="images/svg/nav-arrow-left.svg" /></div>',
+    nextArrow: '<div class="slick-next"><img src="images/svg/nav-arrow-right.svg" /></div>',
+  });
+
+  $('.aside-slider-large').slick({
+    dots: true,
+    arrows: true,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    adaptativeHeight: true,
+    adaptativeWidth: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 10,
+          slidesToScroll: 10,
+          infinite: true,
+          dots: true,
+          arrows: true,
+          adaptativeHeight: true,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 5,
+          arrows: true,
+          adaptativeHeight: true,
+        }
+      }
+    ]
   });
 
 });

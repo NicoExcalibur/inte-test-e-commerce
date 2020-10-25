@@ -1,6 +1,9 @@
 .navbar {
+    
     .collapse {
+        
         ul {
+            
             .nav-link {
                 font-weight: bolder;
                 color: $black;
@@ -10,8 +13,10 @@
 
     .dropdown {
         &-menu {
+            
             a {
                 text-transform: uppercase;
+               
                 &:hover {
                     background-color: $black;
                     color: white;

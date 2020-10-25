@@ -1,9 +1,11 @@
 .accordion {
+    
     .btn {
         color: $black;
         font-weight: bold;
         text-transform: uppercase;
         position: relative;
+        
         //add arrow
         &::after {
             content: "\f107";

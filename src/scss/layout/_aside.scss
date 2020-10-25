@@ -1,5 +1,24 @@
-.aside {
+.aside-like {
     padding: $main-padding;
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+        background: linear-gradient(to right, white 70%, $aside-grey 30%);
+    }
+    
+    h3 {
+        text-transform: uppercase;
+        font-family: $aside-title;
+        font-weight: 900;
+        font-stretch: condensed;
+    }
+}
+
+.aside-last {
+    padding: $main-padding;
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+        background: linear-gradient(to left, white 70%, $aside-grey 30%);
+    }
+    margin-top: 5em;
+    
     h3 {
         text-transform: uppercase;
         font-family: $aside-title;
@@ -9,6 +28,7 @@
 }
 
 .insurance {
+    
     h5 {
         font-size: 95%;
         font-weight: bold;

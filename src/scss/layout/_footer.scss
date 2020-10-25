@@ -3,7 +3,8 @@
   background-color: $main-background;
     
   &-logo {
-        img {
+       
+    img {
 
             height:5em;
         }
@@ -13,6 +14,7 @@
             font-weight: bold;
             font-size: x-large;
             line-height: .9em;
+            font-family: $main-font-condensed;
         }
 
         &-text {
@@ -26,6 +28,7 @@
 
     &-list {
         padding-top: 1.3em;
+        
         .list-group {
             font-family: $main-font-condensed !important;
             
