@@ -127,36 +127,3 @@
         }
     }   
 }
-
-
-.aside-slider {
-    position: relative;
-    
-    .slick-slide{
-
-        img {
-            display: block;
-            width: 70%;
-            max-width:300px;
-        }
-    }
-    
-    .slick-prev {
-        position: absolute;
-        width: 30px;
-        height: 30px;
-        display: inline-block;
-        cursor: pointer;
-        right: 3em;
-        bottom: -2em;
-    }
-    
-    .slick-next {
-        position: absolute;
-        width: 30px;
-        height: 30px;
-        display: inline-block;
-        cursor: pointer;
-        right: 0;
-    }
-}

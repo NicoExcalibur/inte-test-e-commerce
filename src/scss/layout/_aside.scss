@@ -1,6 +1,6 @@
 .aside-like {
     padding: $main-padding;
-    @media (min-width: 992px) and (max-width: 1199.98px) {
+    @media (min-width: 992px){
         background: linear-gradient(to right, white 70%, $aside-grey 30%);
     }
     
@@ -14,7 +14,7 @@
 
 .aside-last {
     padding: $main-padding;
-    @media (min-width: 992px) and (max-width: 1199.98px) {
+    @media (min-width: 992px) {
         background: linear-gradient(to left, white 70%, $aside-grey 30%);
     }
     margin-top: 5em;
