@@ -9,7 +9,7 @@
 
 <body>
     <div class="wrapper">
-        
+      <!-------------------------------------------------------------------------------HEADER-------------------------------------------------------------------------------------->
       <header class="header">
           <div class="info-block d-none d-lg-block d-xl-block">
             <p class="info-block-text text-center">livrason gratuite en France sur toutes vos commandes</p>
@@ -20,6 +20,7 @@
               <li class="list-inline-item  active">FR</li>
             </ol>
           </div>
+          <!------------------ Navbar ------------------------------->
           <nav class="navbar navbar-expand-lg navbar-light p-1 nav-fill flex-lg-justify-between">
             <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <img class="navbar-toggler border-0" src="images/svg/interface-burger.svg" height="50px"/>
@@ -59,11 +60,11 @@
                           <a class="nav-link text-uppercase" href="#">Outlet</a>
                       </li>
                       <li class="nav-item">
-                        <!-- Button trigger modal -->
+                        <!------------------------ Button trigger large modal -------------------->
                         <button class="search border-0 d-none d-lg-block d-xl-block" data-toggle="modal" data-target="#searchModalLarge">
                           <img src="images/svg/interface-search.svg" alt="Logo recherche" height="35px"/>
                         </button>
-                        <!-- Modal -->
+                        <!------------------------------ Large Modal ------------------------------>
                         <div class="modal fade" id="searchModalLarge" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
                           <div class="modal-dialog" role="document">
                             <div class="modal-content rounded-0">
@@ -88,11 +89,11 @@
                 </a>
               </div>
               <div class="nav-right d-flex order-sm-2 order-lg-2">
-                <!-- Button trigger modal -->
+                <!--------------------------- Button trigger modal ------------------------>
                 <button class="search border-0 d-lg-none d-xl-none" data-toggle="modal" data-target="#searchModal">
                   <img src="images/svg/interface-search.svg" alt="Logo recherche" height="50px"/>
                 </button>
-                <!-- Modal -->
+                <!-------------------------- Modal ---------------------------------->
                 <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
                   <div class="modal-dialog" role="document">
                     <div class="modal-content rounded-0">
@@ -118,7 +119,7 @@
             </div>
           </nav>
         </header>
-        
+        <!---------------------------------------------------------------------------- MAIN CONTAINER ---------------------------------------------------------------------------------------->
         <main class="main pt-0 d-lg-flex flex-lg-column flex-xl-column">
           <nav class="d-none d-lg-block d-xl-block" aria-label="breadcrumb">
             <ol class="breadcrumb">
@@ -211,7 +212,7 @@
             </section>
           </div>
         </main>
-        
+        <!---------------------------------------------------------------------------- TOP SLIDER ---------------------------------------------------------------------------------------->
         <aside class="aside-like">
           <div class="row">
             <div class="col-sm-0 col-md-0 col-lg-2"></div>
@@ -246,15 +247,8 @@
               </div>
             </div>
           </div>
-          <!--
-          <div class="arrows d-lg-none d-xl-none text-center">
-            <ul>
-                <li class="prev"><img src="images/svg/nav-arrow-left.svg"/></li>
-                <li class="next"><img src="images/svg/nav-arrow-right.svg"/></li>
-            </ul>
-          </div >
-          -->
-          <!--large slider-->
+
+          <!--------------------------------------------------------------------large slider----------------------------------------------------------------------->
           <div class="arrows-larger d-lg-block d-xl-block">
               <div class="d-flex justify-content-end">
                 <p class="see-all d-none d-lg-block d-xl-block">Tout voir</p>
@@ -301,7 +295,7 @@
             </div>
           </div>
         </aside>
-        
+        <!---------------------------------------------------------------------------- BOTTOM SLIDER ---------------------------------------------------------------------------------------->
         <aside class="aside-last">
           <div class="row">
             <div class="col-sm-0 col-md-0 col-lg-2"></div>
@@ -336,15 +330,8 @@
               </div>
             </div>
           </div>
-          <!--
-          <div class="arrows d-lg-none d-xl-none text-center">
-            <ul>
-                <li class="prev"><img src="images/svg/nav-arrow-left.svg"/></li>
-                <li class="next"><img src="images/svg/nav-arrow-right.svg"/></li>
-            </ul>
-          </div >
-          -->
-          <!--large slider-->
+
+          <!-------------------------------------------------------------------------------large slider---------------------------------------------------------------------------->
           <div class="arrows-larger d-lg-block d-xl-block">
             <div class="d-flex justify-content-end">
               <p class="see-all d-none d-lg-block d-xl-block">Tout voir</p>
@@ -414,7 +401,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
         </aside>
-        
+        <!---------------------------------------------------------------------------- FOOTER ---------------------------------------------------------------------------------------->
         <footer class="footer d-flex flex-column">
           <div class="footer-first d-flex flex-column flex-lg-row flex-xl-row ">
             <div class="accordion col-lg-6 col-xl-6 d-lg-none d-xl-none" id="accordionExample">
@@ -550,7 +537,6 @@
             </div>
           </div>
         </footer>
-    
       </div>
     
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
