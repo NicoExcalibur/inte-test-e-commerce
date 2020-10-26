@@ -1,5 +1,6 @@
 import '../scss/main.scss';
 
+//Sliders params
 $(function() {
 
   $('.main-slider').slick({
@@ -44,13 +45,13 @@ $(function() {
 
 });
 
-//change state by clicking on language select
+//Change state by clicking on language select
 $('.list-inline-item').click(function() {
   $('.list-inline').children(".list-inline-item").toggleClass(" active");
 });
 
 
-//change state by clicking on size's country select
+//Change state by clicking on size's country select
 $('.infos-size-country-item').click(function() {
   $('.infos-size-country-item').removeClass('active');
 
@@ -62,7 +63,7 @@ $('.infos-size-country-item').click(function() {
   }
 });
 
-//change state by clicking on size item
+//Change state by clicking on size item
 $('.infos-size-list-item').click(function() {
   $('.infos-size-list-item').removeClass('bordered');
 
